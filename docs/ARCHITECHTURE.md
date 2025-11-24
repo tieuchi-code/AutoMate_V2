@@ -20,7 +20,7 @@ flowchart TB
     %% ======= Nhóm MOGI-Face =======
     subgraph MOGI-Face
         direction TB
-        ESP[ESP32 Mini] -->|SPI| F[OLED]
+        ESP[ESP32 Mini] -->|I2C| F[OLED]
     end
 
     %% ======= Nhóm CAN System =======
